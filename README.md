@@ -1,14 +1,10 @@
 #  CFA-SRE-MONIKA - APP SERVICE
 
-each environment specific yaml file will be created under MONIKA_SYNTHETICS repo, e.g monika.prod.yml, monika.qa.yml
+Under the MONIKA_SYNTHETICS repository,  we need to create yml file containeing the required configurations specific to the environments e.g monika.prod.yml, monika.qa.yml
 
-Dockerfile should be there with the needful command, along with azure-pipeline.yml file
+Dockerfile should be there with the needful command, and another file present will be azure-pipeline.yml, where the CICD rules will be added to build and deploy the image.
 
-we fetch the base image under dockerfile as hyperjump/monika:latest
-monika.yml file will be copied under /config directory
-after copy, following command will be used under dockerfile:
-
-### Dockerfile content as follows:
+### Dockerfile content are as follows:
 
 ```
 FROM hyperjump/monika:latest
@@ -42,14 +38,14 @@ http://localhost:8441/metrics
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Now, we need to add the reference to Dockerfile under zure-pipelines.yml file for automatic build and pushed to the Container Registry as per environment
+Now, we need to add the reference to Dockerfile under zure-pipelines.yml file for automatic build and push to the Container Registry as per environment
 
-It makes the tags as per env, whcih can be used for rollback changes
+It makes the tags as per env name, which can be used for rollback changes
 
-then pushed the modified code to the repository which triggers the pipeline automatically under Azure devops,
+Once we push the code modifications to the repository, it triggers the pipeline automatically under Azure devops for build and deploy stages.
 
-NOTE: ```in case of syntex error, commit will show failed status under Azure devps pipeline.```
+```NOTE: in case of syntex error, commit will show failed status under Azure devps pipeline.```
 
 Access to push the deployments via Azure devops is also needed to the existing Azure user
 
-NOTE: ```Since there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.```
+```NOTE: Since there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.```
