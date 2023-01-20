@@ -1,4 +1,4 @@
-###  cfa-sre-monika - App Service
+#  CFA-SRE-MONIKA - APP SERVICE
 
 each environment specific yaml file will be created under MONIKA_SYNTHETICS repo, e.g monika.prod.yml, monika.qa.yml
 
@@ -8,7 +8,7 @@ we fetch the base image under dockerfile as hyperjump/monika:latest
 monika.yml file will be copied under /config directory
 after copy, following command will be used under dockerfile:
 
-# Dockerfile content as follows:
+### Dockerfile content as follows:
 
 ```
 FROM hyperjump/monika:latest
