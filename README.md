@@ -21,6 +21,7 @@ After the changes under monika.yml done, we need to build the image:
 
 ```docker build -t testing_monika:latest .```
 
+### Local Deployment 
 Once the dockerfile is built on local system, we can run it as container and to expose app on 8441 system port:
 
 ```docker run -p 8441:80 testing_monika:latest```
