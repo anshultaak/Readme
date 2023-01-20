@@ -38,7 +38,7 @@ http://localhost:8441/metrics
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Now, we need to add the reference to Dockerfile under zure-pipelines.yml file for automatic build and push to the Container Registry as per environment
+Now, we need to add the reference to Dockerfile under Azure-pipelines.yml file for automatic build and push to the Container Registry as per environment
 
 It makes the tags as per env name, which can be used for rollback changes
 
