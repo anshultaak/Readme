@@ -19,7 +19,9 @@ CMD["monika", -c", "config/monika.yml", "prometheus", "80", "-s", "-1"]
 
 After the changes under monika.yml done, we need to build the image:
 
-```docker build -t testing_monika:latest .```
+```
+docker build -t testing_monika:latest .
+```
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -27,11 +29,15 @@ After the changes under monika.yml done, we need to build the image:
 ### Local Deployment 
 Once the dockerfile is built on local system, we can run it as container and to expose app on 8441 system port:
 
-```docker run -p 8441:80 testing_monika:latest```
+```
+docker run -p 8441:80 testing_monika:latest
+```
 
 Now, the app can be accessed on local URL as follows:
 
-```http://localhost:8441/metrics```
+```
+http://localhost:8441/metrics
+```
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
