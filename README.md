@@ -21,7 +21,9 @@ After the changes under monika.yml done, we need to build the image:
 
 ```docker build -t testing_monika:latest .```
 
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Local Deployment 
 Once the dockerfile is built on local system, we can run it as container and to expose app on 8441 system port:
 
@@ -30,7 +32,9 @@ Once the dockerfile is built on local system, we can run it as container and to 
 Now, the app can be accessed on local URL as follows:
 
 ```http://localhost:8441/metrics```
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Now, we need to add the reference to Dockerfile under zure-pipelines.yml file for automatic build and pushed to the Container Registry as per environment
 
