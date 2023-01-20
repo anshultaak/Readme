@@ -40,7 +40,7 @@ http://localhost:8441/metrics
 
 ```STEP 6:```  Now, we need to add the reference to Dockerfile under Azure-pipelines.yml file for automatic build and push to the Container Registry as per environment
 
-It makes the tags as per env name, which can be used for rollback changes
+  It makes the tags as per env name, which can be used for rollback changes
 
 ```STEP 7:```  Once we push the code modifications to the repository, it triggers the pipeline automatically under Azure devops for build and deploy stages.
 
