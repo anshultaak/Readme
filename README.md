@@ -46,4 +46,4 @@ in case of syntex error, commit will show failed status under Azure devps pipeli
 
 Access to push the deployments via Azure devops is also needed to the existing Azure user
 
-SInce there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.
+NOTE: ```SInce there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.```
