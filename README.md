@@ -42,8 +42,8 @@ It makes the tags as per env, whcih can be used for rollback changes
 
 then pushed the modified code to the repository which triggers the pipeline automatically under Azure devops,
 
-in case of syntex error, commit will show failed status under Azure devps pipeline.
+NOTE: ```in case of syntex error, commit will show failed status under Azure devps pipeline.```
 
 Access to push the deployments via Azure devops is also needed to the existing Azure user
 
-NOTE: ```SInce there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.```
+NOTE: ```Since there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.```
