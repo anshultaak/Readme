@@ -59,8 +59,11 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 
 ![image](https://user-images.githubusercontent.com/76546821/213982356-8137c00f-0210-47f3-aca1-073b53559033.png)
 
-git branch 
-git checkout -b <NEW_BRANCH_NAME>
-git commit -m "<message name>"
-git push origin <NEW_BRANCH_NAME>
+```git branch```
+
+```git checkout -b <NEW_BRANCH_NAME>```
+
+```git commit -m "<message name>"```
+
+```git push origin <NEW_BRANCH_NAME>```
 
