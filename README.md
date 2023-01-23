@@ -57,13 +57,27 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# Monika.yml update and deployment
+
+1. Go to the repository monika-synthetics
+
 <img width="944" alt="image" src="https://user-images.githubusercontent.com/76546821/213982247-68f656ff-e524-4398-9c9e-28840761fd91.png">
+
+2. Copy the clone link from three dots to clone the repository:
 
 ![image](https://user-images.githubusercontent.com/76546821/213982356-8137c00f-0210-47f3-aca1-073b53559033.png)
 
+3. Then we need to copy the clone URL, and generate credentials from Generate Git Credentials button.
+
+4. Check the current branch using following command:
+
 ```git branch```
 
+5. Create a new branch using following command:
+
 ```git checkout -b <NEW_BRANCH_NAME>```
+
+6. A new URL can be updated under monika.yml as follows:
 
 ```
 - id: 27617729-87d5-4713-ad83-adeead7cf090
@@ -71,6 +85,7 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
     requests:
       - url: https://www.cfasociety.org/emirates
 ```
+7. Refer to the below mentioned commands for pushing the code after changes.
 
 ``` git add . ```
 
@@ -78,8 +93,12 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 
 ```git push origin <NEW_BRANCH_NAME>```
 
+8. Now, Click on to the Pull Request option to generate the Pull Request for the merge of new changes as follows:
 
 <img width="959" alt="image" src="https://user-images.githubusercontent.com/76546821/213983268-6636aa5b-ee58-40c0-8401-a6862ce3791d.png">
+
+9. Make sure to add the reviewer while creating the PR:
+
 <img width="841" alt="image" src="https://user-images.githubusercontent.com/76546821/213983529-ce8e99e0-1f1f-40b4-97b9-662898b370bd.png">
 
 
