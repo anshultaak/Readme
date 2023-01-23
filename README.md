@@ -63,6 +63,15 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 
 ```git checkout -b <NEW_BRANCH_NAME>```
 
+```
+- id: 27617729-87d5-4713-ad83-adeead7cf090
+    name: CFA Society Emirates
+    requests:
+      - url: https://www.cfasociety.org/emirates
+```
+
+``` git add . ```
+
 ```git commit -m "<message name>"```
 
 ```git push origin <NEW_BRANCH_NAME>```
