@@ -52,4 +52,8 @@ Access to push the deployments via Azure devops is also needed to the existing A
 
 ```
 NOTE: Since there were permissions issues, the repo was added under CFA project, and code was mograted there, which worked well.
+
 ```
+
+<img width="944" alt="image" src="https://user-images.githubusercontent.com/76546821/213982247-68f656ff-e524-4398-9c9e-28840761fd91.png">
+
