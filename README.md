@@ -59,6 +59,7 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 
 # Monika.yml update and deployment
 
+
 1. Go to the repository monika-synthetics
 
 <img width="944" alt="image" src="https://user-images.githubusercontent.com/76546821/213982247-68f656ff-e524-4398-9c9e-28840761fd91.png">
@@ -69,13 +70,21 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 
 3. Then we need to copy the clone URL, and generate credentials from Generate Git Credentials button.
 
+```
+git clone https://cfainstitute.visualstudio.com/CFA/_git/ITSM.Monika_Synthetics
+```
+
 4. Check the current branch using following command:
 
-```git branch```
+```
+git branch
+```
 
 5. Create a new branch using following command:
 
-```git checkout -b <NEW_BRANCH_NAME>```
+```
+git checkout -b <NEW_BRANCH_NAME>
+```
 
 6. A new URL can be updated under monika.yml as follows:
 
@@ -87,11 +96,17 @@ NOTE: Since there were permissions issues, the repo was added under CFA project,
 ```
 7. Refer to the below mentioned commands for pushing the code after changes.
 
-``` git add . ```
+``` 
+git add .
+```
 
-```git commit -m "<message name>"```
+```
+git commit -m "<message name>"
+```
 
-```git push origin <NEW_BRANCH_NAME>```
+```
+git push origin <NEW_BRANCH_NAME>
+```
 
 8. Now, Click on to the Pull Request option to generate the Pull Request for the merge of new changes as follows:
 
