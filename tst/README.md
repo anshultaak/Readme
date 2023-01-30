@@ -80,7 +80,7 @@ python3 Synthetic.py
 
 
 
-### For troubleshooting the error,
+### For troubleshooting the error
 
 ```STEP 1: ``` When we run the script on our local machine, the "Page Not Found" error often occurs.
 
@@ -88,12 +88,13 @@ python3 Synthetic.py
 
 ```STEP 2: ``` When we run the script and, in case we face some error, we can check the error with developer tools.
 
-a. BBy clicking the right side of three browsers, you can access the developer tools:
+a. By clicking the right side of three browsers, you can access the developer tools:
 
 <img width="202" alt="image" src="https://user-images.githubusercontent.com/76546821/215445810-67f3887e-5e89-4881-b50c-cfd582825379.png">
 
-b. 
+b. Under the Developer Tools settings, you need to select the Network option where you are able to see the actual URL it is failing on.
 
+<img width="416" alt="image" src="https://user-images.githubusercontent.com/76546821/215447621-eeb26b73-76f9-4ef8-ad47-edcbe4fb6884.png">
 
 
 ```STEP 3: ``` We can log in to Azure and go to the server to check the health of the application. There, we can check if the application is running properly or not.
