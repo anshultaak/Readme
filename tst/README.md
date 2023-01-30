@@ -21,3 +21,4 @@ Synthetic or directed monitoring is a method to monitor your applications by sim
 
 
 ### We can log in to Azure and go to the server to check the health of the application. There, we can check if the application is running properly or not.
+
