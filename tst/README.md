@@ -11,7 +11,7 @@ Synthetic or directed monitoring is a method to monitor your applications by sim
 
 
 
-### we can run the script in the local machine with these following steps.
+### we can run the script in the local machine with these following steps:
 
 ```Step 1: ``` Installing Google Chrome
 
@@ -23,6 +23,34 @@ wget -nc https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 sudo apt update 
 sudo apt install -f ./google-chrome-stable_current_amd64.deb 
 ```
+
+```Step 2: ``` Installing Python
+
+```
+sudo apt install python3
+```
+
+```Step 3: ``` Installing Selenium and Webdriver for Python
+
+a. Create a directory to store Python scripts. Then switch to the newly-created directory
+
+```
+mkdir tests && cd tests 
+```
+
+b. Set up the Python virtual environment and activate it.
+
+```
+python3 -m venv venv 
+source venv/bin/activate 
+```
+
+c. Now use PIP to install the selenium and webdriver-manager Python modules under the virtual environment.
+
+```
+pip install selenium webdriver-manager 
+```
+
 
 
 
