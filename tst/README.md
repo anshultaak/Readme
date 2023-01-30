@@ -8,17 +8,20 @@ Synthetic or directed monitoring is a method to monitor your applications by sim
 
 
 
-### For troubleshooting the error, we can run the script in the local machine with these following steps.
+### we can run the script in the local machine with these following steps.
 
 
 
+### For troubleshooting the error,
 
-### When we run the script on our local machine, the "Page Not Found" error often occurs.
-
-
-
-### When we run the script and, in case we face some error, we can check the error with developer tools.
+```STEP 1: ``` When we run the script on our local machine, the "Page Not Found" error often occurs.
 
 
-### We can log in to Azure and go to the server to check the health of the application. There, we can check if the application is running properly or not.
+
+```STEP 2: ``` When we run the script and, in case we face some error, we can check the error with developer tools.
+
+
+```STEP 3: ``` We can log in to Azure and go to the server to check the health of the application. There, we can check if the application is running properly or not.
+
+```STEP 4: ``` If we are still getting errors in the application, we have only one way to resolve this issue: we need to check with the developer.
 
