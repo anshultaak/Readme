@@ -14,3 +14,7 @@ Synthetic or directed monitoring is a method to monitor your applications by sim
 
 
 ### When we run the script on our local machine, the "Page Not Found" error often occurs.
+
+
+
+### When we run the script and, in case we face some error, we can check the error with developer tools.
