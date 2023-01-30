@@ -73,7 +73,10 @@ sudo apt install python3
  time.sleep(5)
  driver.close()
  ```
-
+f. Now, run this Python script in a shell.
+```
+python3 Synthetic.py
+```
 
 
 
