@@ -8,7 +8,21 @@ Synthetic or directed monitoring is a method to monitor your applications by sim
 
 
 
+
+
+
 ### we can run the script in the local machine with these following steps.
+
+```Step 1: ``` Installing Google Chrome
+
+```
+wget -nc https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+```
+
+```
+sudo apt update 
+sudo apt install -f ./google-chrome-stable_current_amd64.deb 
+```
 
 
 
