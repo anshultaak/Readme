@@ -99,5 +99,13 @@ python3 Synthetic.py
 
 ```STEP 3: ``` We can log in to Azure and go to the server to check the health of the application. There, we can check if the application is running properly or not.
 
-```STEP 4: ``` If we are still getting errors in the application, we have only one way to resolve this issue: we need to check with the developer.
+```Step 4: ``` For further investigation, we can log in to Grafana and check the dashboard and panel. Under the panel, we can see if the database connection is stable, and we can also view memory and CPU utilization.
+
+  a. With this URL, you can log in to Grafana.
+  
+  ```
+  url
+  ```
+
+```STEP 5: ``` If we are still getting errors in the application, we have only one way to resolve this issue: we need to check with the developer.
 
