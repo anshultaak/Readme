@@ -32,23 +32,23 @@ sudo apt install python3
 
 ```Step 3: ``` Installing Selenium and Webdriver for Python
 
-a. Create a directory to store Python scripts. Then switch to the newly-created directory
+ a. Create a directory to store Python scripts. Then switch to the newly-created directory
 
-```
-mkdir tests && cd tests 
-```
+ ```
+ mkdir tests && cd tests 
+ ```
 
-b. Set up the Python virtual environment and activate it.
+ b. Set up the Python virtual environment and activate it.
 
-```
-python3 -m venv venv 
-source venv/bin/activate 
-```
+ ```
+ python3 -m venv venv 
+ source venv/bin/activate 
+ ```
 
-c. Now use PIP to install the selenium and webdriver-manager Python modules under the virtual environment.
+ c. Now use PIP to install the selenium and webdriver-manager Python modules under the virtual environment.
 
-```
-pip install selenium webdriver-manager 
+ ```
+  pip install selenium webdriver-manager 
 ```
 
 
