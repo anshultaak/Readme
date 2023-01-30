@@ -51,6 +51,29 @@ sudo apt install python3
   pip install selenium webdriver-manager 
 ```
 
+ d. Create a Python script and edit it in your favorite text editor:
+
+ ```
+ nano Synthetic.py
+ ```
+
+ e. Example the following Selenium Python script to the file:
+
+ ```
+ import time
+ from selenium import webdriver
+ from selenium.webdriver.common.by import By
+ from selenium.webdriver.common.keys import keys
+ 
+ username = ""
+ password = ""
+ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+ 
+ driver.get("https://python.org")
+ time.sleep(5)
+ driver.close()
+ ```
+
 
 
 
