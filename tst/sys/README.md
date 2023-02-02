@@ -36,11 +36,11 @@ We need to create one monika file where we need to define that URL.
 
 After adding the URL in Example's .yml, we need to build that image.
 ```
-docker build -t testing_monika:latest .
+docker build -t testing:latest .
 ```
  Once the dockerfile is built on local system, we can run it as container and to expose app on 8441 system port:
 ```
-docker run -p 8441:80 testing_monika:latest
+docker run -p 8441:80 testing:latest
 ```
 
 Now, the app can be accessed on local URL as follows:
