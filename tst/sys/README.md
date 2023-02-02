@@ -27,6 +27,8 @@ https://portal.azure.com/#@CFAInstitute.onmicrosoft.com/resource/subscriptions/6
 
 ```STEP 3:``` Also, you can check if your website certificate is working fine. In case the website has expired, you need to renew the certificate.
 
+```STEP 5:``` You can also check which password and username you are using to log in. It works fine; you can try logging in manually if it gives you an error. You may need to change your username and password.
+
 ```STEP 4:``` The integration failed due to the data it was required to process.
 
 
