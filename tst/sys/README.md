@@ -48,9 +48,9 @@ Now, the app can be accessed on local URL as follows:
 http://localhost:8441/metrics
 ```
 
-### Memory Usage 
+### Memory Usage and Database connectivity issue
 
-Check the memory usage in the service. If it shows high usage in the graph, We need to give the server more resources.
+```Step 1: ``` Check the memory usage in the service. If it shows high usage in the graph, We need to give the server more resources.
 <img width="549" alt="image" src="https://user-images.githubusercontent.com/76546821/216268498-62757e94-35be-4120-99f1-43da5bb13bf4.png">
 
-
+```Step 2: ``` Check that the DataSource is correctly connected to your application and check if you are able to connect to the database from your server.
