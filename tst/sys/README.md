@@ -18,6 +18,7 @@ https://portal.azure.com/#@CFAInstitute.onmicrosoft.com/resource/subscriptions/6
 <img width="614" alt="image" src="https://user-images.githubusercontent.com/76546821/216254550-18ee8753-0acd-40d9-bdd6-f898f96b6f84.png">
 
 ### we can run the script in the local machine with Docker
+
 To test this URL, we need to create a Dockerfile with the following steps.
 ```
 FROM hyperjump/monika:latest
@@ -25,4 +26,10 @@ COPY monika.yml /config
 CMD["monika", -c", "config/monika.yml", "prometheus", "80", "-s", "-1"]
 
 ```
-
+We need to create one monika file where we need to define that URL.
+```
+- id: <UNIQUE_ID>
+    name: <SAMPLE_NAME>>
+    requests:
+      - url: <https://www.SAMPLE_URL.org/>
+```
