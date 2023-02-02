@@ -33,3 +33,17 @@ We need to create one monika file where we need to define that URL.
     requests:
       - url: <https://www.SAMPLE_URL.org/>
 ```
+
+After adding the URL in Monika's .yml, we need to build that image.
+```
+docker build -t testing_monika:latest .
+```
+ Once the dockerfile is built on local system, we can run it as container and to expose app on 8441 system port:
+```
+docker run -p 8441:80 testing_monika:latest
+```
+
+Now, the app can be accessed on local URL as follows:
+```
+http://localhost:8441/metrics
+```
