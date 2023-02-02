@@ -13,4 +13,6 @@ We can login to the Azure portal using this URL, and inside the transition optio
 ```
 https://portal.azure.com/#@CFAInstitute.onmicrosoft.com/resource/subscriptions/62d44f85-ab88-4465-9f30-5e95ba77a155/resourceGroups/azprdRGInfrastructure/providers/Microsoft.Insights/components/azprdInfrastructure/overview
 ```
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/76546821/216254302-eeea2c79-971d-41e5-a5af-9ae2f4a1613e.png">
+
 
