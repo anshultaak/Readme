@@ -22,8 +22,8 @@ https://portal.azure.com/#@CFAInstitute.onmicrosoft.com/resource/subscriptions/6
 To test this URL, we need to create a Dockerfile with the following steps.
 ```
 FROM hyperjump/monika:latest
-COPY monika.yml /config
-CMD["monika", -c", "config/monika.yml", "prometheus", "80", "-s", "-1"]
+COPY example.yml /config
+CMD["monika", -c", "config/example.yml", "prometheus", "80", "-s", "-1"]
 
 ```
 We need to create one monika file where we need to define that URL.
@@ -34,7 +34,7 @@ We need to create one monika file where we need to define that URL.
       - url: <https://www.SAMPLE_URL.org/>
 ```
 
-After adding the URL in Monika's .yml, we need to build that image.
+After adding the URL in Example's .yml, we need to build that image.
 ```
 docker build -t testing_monika:latest .
 ```
