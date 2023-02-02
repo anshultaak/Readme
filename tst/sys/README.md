@@ -17,5 +17,5 @@ https://portal.azure.com/#@CFAInstitute.onmicrosoft.com/resource/subscriptions/6
 
 <img width="614" alt="image" src="https://user-images.githubusercontent.com/76546821/216254550-18ee8753-0acd-40d9-bdd6-f898f96b6f84.png">
 
-
+### we can run the script in the local machine with Docker
 
