@@ -25,7 +25,7 @@ https://portal.azure.com/#@CFAInstitute.onmicrosoft.com/resource/subscriptions/6
 
 ```Step 2: ``` Check that the DataSource is correctly connected to your application and We can check this by going inside the server and trying to connect with the database.
 
-```STEP 3:`` Also, you can check if your website certificate is working fine. In case the website has expired, you need to renew the certificate.
+```STEP 3:``` Also, you can check if your website certificate is working fine. In case the website has expired, you need to renew the certificate.
 
 ```STEP 4:``` The integration failed due to the data it was required to process.
 
