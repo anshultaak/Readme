@@ -1,22 +1,22 @@
-What is Synthetic Monitoring?
+# What is Synthetic Monitoring?
 
 Synthetic or directed monitoring is a method to monitor your applications by simulating users – directing the path taken through the application. This directed monitoring provides information as to the uptime and performance of your critical business transactions, and most common paths in the application. The simple reality is that there is no easy way to combine the accessibility, coherence, and manageability offered by a centralized system with the sharing, growth, cost, and autonomy advantages of a distributed system. It is here, at this intersection, that businesses turn to IT development and operations teams for guidance—APM tools enable them to negotiate these gaps.
 
 
 
-Objective of this document
+# Objective of this document
 
 This document will help you guide the troubleshooting steps once your receive an alert from Synthetic failures.
 NOTE: Please keep in mind that this document is deduced from most common scenarios for troubleshooting and will keep evolving over time. So please use this only a guide.
 
 
 
-Tool being using Synthetics: 
+### Tool being using Synthetics: 
 Selenium with Python and Chrome Driver on Ubuntu & Debian
 
 
 
-Alerts on Synthetic failure:
+### Alerts on Synthetic failure:
 
 If the failure happens on Synthetic monitoring an alert will be raised via Opsgene:
 
@@ -24,7 +24,7 @@ If the failure happens on Synthetic monitoring an alert will be raised via Opsge
 
 
 
-Troubleshooting steps
+# Troubleshooting steps
 
 Step1: Please visit the Grafana 'sre-dashboard' to understand the start time and frequency of the errors(marked in RED):
 
