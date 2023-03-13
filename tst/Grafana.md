@@ -24,3 +24,8 @@
    * Create dashboard links, panel, or data links. Links can go to other dashboards or to external systems. For more information, refer to Manage dashboard links.
    * Add a Dashboard list panel. You can then customize what you see by doing tag or folder searches.
    * Add a Text panel and use markdown to customize the display.
+
+### Alerts
+* If you're using Grafana Alerting, then you can have alerts sent through a number of different alert notifiers, including PagerDuty, SMS, email, VictorOps, OpsGenie, or Slack.
+
+* Alert hooks allow you to create different notifiers with a bit of code if you prefer some other channels of communication. Visually define alert rules for your most important metrics.
