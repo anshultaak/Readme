@@ -20,3 +20,7 @@
    * If you create a temporary dashboard, perhaps to test something, prefix the name with TEST: . Delete the dashboard when you are finished.
 * Copying dashboards with no significant changes is not a good idea
    * You miss out on updates to the original dashboard, such as documentation changes, bug fixes, or additions to metrics.
+* Maintain a dashboard of dashboards or cross-reference dashboards. This can be done in several ways:
+   * Create dashboard links, panel, or data links. Links can go to other dashboards or to external systems. For more information, refer to Manage dashboard links.
+   * Add a Dashboard list panel. You can then customize what you see by doing tag or folder searches.
+   * Add a Text panel and use markdown to customize the display.
