@@ -36,3 +36,8 @@ Grafana is a database monitoring and analysis tool. It enables us to build dashb
 ### Dashboard variables
 * Template variables allow you to create dashboards that can be reused for lots of different use cases. Values aren’t hard-coded with these templates, so for instance, if you have a production server and a test server, you can use the same dashboard for both.
 * Templating allows you to drill down into your data, say, from all data to North America data, down to Texas data, and beyond. You can also share these dashboards across teams within your organization—or if you create a great dashboard template for a popular data source, you can contribute it to the whole community to customize and use.
+
+### Issue dashboards
+* This is a type of Grafana dashboard created for investigating a specific issue. Their use is scoped to a limited time, after which they become obsolete or stale.
+* You may say that Grafana Explore is the right tool for this use case, because it allows you to run ad-hoc disposable queries. But what if it’s a hard-to-diagnose issue you have been chasing for weeks or months?
+* I argue that there is a case for setting up a folder for such dashboards. You may also add a timestamp or an issue number in the dashboard title.
