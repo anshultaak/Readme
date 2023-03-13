@@ -1,3 +1,7 @@
+### What is Grafana
+
+Grafana is a database monitoring and analysis tool. It enables us to build dashboards visualizations of the essential measures that we need to analyze. It has a good community of enthusiasts who will share recyclable dashboards.
+
 
 ### Best practices for creating dashboards
 
