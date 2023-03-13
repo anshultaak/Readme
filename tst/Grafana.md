@@ -18,6 +18,21 @@ Grafana is a database monitoring and analysis tool. It enables us to build dashb
 * To add documentation to a dashboard, add a Text panel visualization to the dashboard. Record things like the purpose of the dashboard, useful resource links, and any instructions users might need to interact with the dashboard.
 * To add documentation to a panel, edit the panel settings and add a description. Any text you add will appear if you hover your cursor over the small i in the top left corner of the panel.
 
+### Data sources
+* Grafana comes with built-in support for many data sources. If you need other data sources, you can also install one of the many data source plugins. If the plugin you need doesn’t exist, you can develop a custom plugin.
+* Each data source comes with a query editor, which formulates custom queries according to the source’s structure. After you add and configure a data source, you can use it as an input for many operations, including:
+  * Query the data with Explore.
+  * Visualize it in panels.
+  * Create rules for alerts.
+* Manage data sources
+  * Only users with the organization administrator role can add or remove data sources. To access data source management tools in Grafana as an administrator, navigate to Configuration > Data Sources in the Grafana sidebar.
+
+### Query and transform data
+* Grafana supports many types of data sources. Data source queries return data that Grafana can transform and visualize. Each data source uses its own query language, and data source plugins each implement a query-building user interface called a query editor.
+* About queries Grafana panels communicate with data sources via queries, which retrieve data for the visualization. A query is a question written in the query language used by the data source.
+* You can configure query frequency and data collection limits in the panel’s data source options. Grafana supports up to 26 queries per panel.
+
+
 ### Best practices for managing dashboards
 * Avoid dashboard sprawl, meaning the uncontrolled growth of dashboards. Dashboard sprawl negatively affects time to find the right dashboard. Duplicating dashboards and changing “one thing” (worse: keeping original tags) is the easiest kind of sprawl.
    * Periodically review the dashboards and remove unnecessary ones.
