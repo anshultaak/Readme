@@ -65,3 +65,10 @@ Grafana is a database monitoring and analysis tool. It enables us to build dashb
 *  In Save in folder, select the folder to save the library panel.
 * Click Create library panel to save your changes.
 * Save the dashboard
+
+#### View a list of library panels
+You can view a list of available library panels and search for a library panel.
+
+* Hover over the Dashboard option on the left menu, then click Library panels.
+* Search for a specific library panel if you know its name.
+* You can also filter the panels by folder or type.
