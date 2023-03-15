@@ -56,3 +56,12 @@ Grafana is a database monitoring and analysis tool. It enables us to build dashb
 * This is a type of Grafana dashboard created for investigating a specific issue. Their use is scoped to a limited time, after which they become obsolete or stale.
 * You may say that Grafana Explore is the right tool for this use case, because it allows you to run ad-hoc disposable queries. But what if it’s a hard-to-diagnose issue you have been chasing for weeks or months?
 * I argue that there is a case for setting up a folder for such dashboards. You may also add a timestamp or an issue number in the dashboard title.
+
+#### Create a library panel
+* Open a panel in edit mode.
+* In the panel display options, click the down arrow option to bring changes to the visualization.
+* Click the Library panels option, and then click Create library panel to open the create dialog.
+* In Library panel name, enter the name.
+*  In Save in folder, select the folder to save the library panel.
+* Click Create library panel to save your changes.
+* Save the dashboard
