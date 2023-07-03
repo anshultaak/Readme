@@ -117,3 +117,19 @@ git push origin <NEW_BRANCH_NAME>
 <img width="841" alt="image" src="https://user-images.githubusercontent.com/76546821/213983529-ce8e99e0-1f1f-40b4-97b9-662898b370bd.png">
 
 
+
+## To set up Atlas MongoDB, follow these steps:
+
+1. Go to the Atlas MongoDB login page and create a new Atlas account. You can use the following URL to register: [https://account.mongodb.com/account/register](https://account.mongodb.com/account/register).
+
+2. After creating your Atlas account, proceed to create an Atlas database. 
+
+3. Once the database is created, configure the network settings. Add `0.0.0.0/0` to allow access from any IP address. 
+
+4. Create a user account that will be used to access the database.
+
+5. After completing the above steps, select the desired database and locate the MongoDB connection URL. You will need to add this URL to your helmfile.
+
+Note: Make sure to replace any placeholder values (e.g., `<placeholder>`) with the appropriate information, such as your username, password, and database name.
+
+
