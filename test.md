@@ -59,4 +59,4 @@ AWS_PROFILE=ps_aws terraform apply -var-file=terraform.tfvars
 Add the new EC2 IP in RDS Security Group for Connection
 
 Please review the screenshot below for the backup EC2 and RDS.
-![alt text](image.png)
+
