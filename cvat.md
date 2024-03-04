@@ -49,7 +49,7 @@ Before you begin, ensure that you have the following tools installed:
         iam.gke.io/gcp-service-account=cvat-gsa-dev@wisy-cvat.iam.gserviceaccount.com
     ```
 
-4. **Setup NFS Server**:[install_and_configure_nfs_server_ubuntu](https://linuxhint.com/install-and-configure-nfs-server-ubuntu-22-04/)
+4. **Setup NFS Server**:[Install And Configure Nfs Server Ubuntu](https://linuxhint.com/install-and-configure-nfs-server-ubuntu-22-04/)
 
 ### Adding New Desk to VM
 
