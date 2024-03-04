@@ -31,7 +31,7 @@ Make sure you have the following tools installed:
     terraform apply -var-file=dev.tfvars
     ```
 
-## Further Steps
+## Deployment Steps
 
 ### Know About
 
@@ -48,60 +48,8 @@ Make sure you have the following tools installed:
         --namespace cvat \
         iam.gke.io/gcp-service-account=cvat-gsa-dev@wisy-cvat.iam.gserviceaccount.com
     ```
-
-
-6. **Setting up Helm**: Instructions for setting up Helm.
-    ```
-    cd wisy-cvat/kubernetes-manifests/dev
-    helm dependency update
-    ```
-
-### Running Helm
-
-Commands for running Helm:
-```
-helm upgrade -n cvat-dev cvat-dev -i ./helm-chart -f helm-chart/values.yaml -f cvat.override-values-dev.yaml
-helm uninstall -n cvat-dev cvat-dev
-```
-
-### Redis Authentication
-
-Get Redis authentication string:
-```
-gcloud redis instances get-auth-string wisy-cvat-cache --region=us-east1 --project wisy-cvat
-```
-
-### Additional GCloud Commands
-
-Some useful GCloud commands:
-```
-gcloud container node-pools list --cluster=wisy-cvat \
-    --format="table(name,config.oauthScopes)" \
-    --region us-east1 \
-    --project=wisy-cvat
-
-gcloud container node-pools list \
-    --cluster=wisy-cvat \
-    --format="table(name,config.serviceAccount)" \
-    --region us-east1 \
-    --project=wisy-cvat
-
-gcloud projects get-iam-policy wisy-cvat \
-    --flatten="bindings[]" \
-    --filter="bindings.members=serviceAccount:wisy-cvat-workload-identity-sa@wisy-cvat.iam.gserviceaccount.com" \
-    --format="table[box](bindings.role)"
-```
-
-### Creating Super User
-
-Exec into backend server pod and run following command:
-```
-python3 ~/manage.py createsuperuser
-wisy-cvat-superadmin
-harry.paul@cloudwerx.tech
-wisy-cvat-superadmin
-```
-
+4. **setup NFS Server**:
+   
 ### Adding New Desk to VM
 
 Instructions for adding a new desk to VM:
@@ -134,9 +82,34 @@ sudo exportfs -a
 sudo systemctl restart nfs-kernel-server
 ```
 
-### Running CVAT Locally
+5. **Setting up Helm**: Instructions for setting up Helm.
+    ```
+    cd wisy-cvat/kubernetes-manifests/dev
+    helm dependency update
+    ```
 
-Update etc/host and add an entry for cvat.local.
-Example: `34.73.109.110 cvat.local`
+### Running Helm
 
-This documentation provides detailed steps for setting up and managing the Wisy-CVAT infrastructure using Terraform, GCloud CLI, and other tools.
+Commands for running Helm:
+```
+helm upgrade -n cvat-dev cvat-dev -i ./helm-chart -f helm-chart/values.yaml -f cvat.override-values-dev.yaml
+helm uninstall -n cvat-dev cvat-dev
+```
+
+### Redis Authentication
+
+Get Redis authentication string:
+```
+gcloud redis instances get-auth-string wisy-cvat-cache --region=us-east1 --project wisy-cvat
+```
+
+### Creating Super User
+
+Exec into backend server pod and run following command:
+```
+python3 ~/manage.py createsuperuser
+wisy-cvat-superadmin
+harry.paul@cloudwerx.tech
+wisy-cvat-superadmin
+```
+
