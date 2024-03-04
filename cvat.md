@@ -12,7 +12,8 @@ Make sure you have the following tools installed:
 1. Clone the repository:
     ```
     git clone https://github.com/CloudWerx/wisy-cvat.git
-    cd wisy-cvat
+    git checkout dev
+    cd wisy-cvat/terraform
     ```
 
 2. Initialize Terraform:
@@ -48,23 +49,10 @@ Make sure you have the following tools installed:
         iam.gke.io/gcp-service-account=cvat-gsa-dev@wisy-cvat.iam.gserviceaccount.com
     ```
 
-4. **Partial Checkout from Repo**: Guide for partially checking out from a Git repository.
-    ```
-    git init <repo>
-    cd <repo>
-    git remote add -f origin <url>
-    git config core.sparseCheckout true
-    echo "some/dir/" >> .git/info/sparse-checkout
-    echo "another/sub/tree" >> .git/info/sparse-checkout
-    git pull origin opencv/release-2.11.0
-    ```
-
-5. **CVAT Repo**: Link to the CVAT repository.
-    [CVAT Repository](https://github.com/opencv/cvat/tree/develop)
 
 6. **Setting up Helm**: Instructions for setting up Helm.
     ```
-    cd wisy-cvat/helm/cvat-v2.11.0/helm-chart
+    cd wisy-cvat/kubernetes-manifests/dev
     helm dependency update
     ```
 
@@ -106,9 +94,8 @@ gcloud projects get-iam-policy wisy-cvat \
 
 ### Creating Super User
 
-Create a super user:
-```
 Exec into backend server pod and run following command:
+```
 python3 ~/manage.py createsuperuser
 wisy-cvat-superadmin
 harry.paul@cloudwerx.tech
