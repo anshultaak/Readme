@@ -85,23 +85,23 @@ sudo systemctl restart nfs-kernel-server
 
 5. **Setting up Helm**: Instructions for setting up Helm.
     ```bash
-    cd wisy-cvat/kubernetes-manifests/dev
+    cd wisy-cvat/helm/cvat-v2.11.0/helm-chart/
     helm dependency update
     ```
-
-### Running Helm
-
-Commands for running Helm:
-```bash
-helm upgrade -n cvat-dev cvat-dev -i ./helm-chart -f helm-chart/values.yaml -f cvat.override-values-dev.yaml
-helm uninstall -n cvat-dev cvat-dev
-```
-
 ### Redis Authentication
 
 Get Redis authentication string:
 ```bash
 gcloud redis instances get-auth-string wisy-cvat-cache --region=us-east1 --project wisy-cvat
+```
+
+### Running Helm
+
+Commands for running Helm:
+```bash
+cd wisy-cvat/helm/cvat-v2.11.0
+helm upgrade -n cvat-dev cvat-dev -i ./helm-chart -f helm-chart/values.yaml -f cvat.override-values-dev.yaml
+helm uninstall -n cvat-dev cvat-dev
 ```
 
 ### Creating Super User
