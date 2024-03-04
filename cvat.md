@@ -94,6 +94,7 @@ Get Redis authentication string:
 ```bash
 gcloud redis instances get-auth-string wisy-cvat-cache --region=us-east1 --project wisy-cvat
 ```
+Update the redis password in cvat.override-values-dev.yaml file
 
 ### Running Helm
 
