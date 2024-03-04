@@ -2,58 +2,59 @@
 
 ## Prerequisites
 
-Make sure you have the following tools installed:
+Before you begin, ensure that you have the following tools installed:
 
-- GCloud CLI
+- Google Cloud CLI
 - Terraform
 
 ## Installation Steps
 
-1. Clone the repository:
-    ```
+1. **Clone the Repository:**
+    ```bash
     git clone https://github.com/CloudWerx/wisy-cvat.git
     git checkout dev
     cd wisy-cvat/terraform
     ```
 
-2. Initialize Terraform:
-    ```
+2. **Initialize Terraform:**
+    ```bash
     terraform init
     ```
 
-3. Plan the infrastructure changes:
-    ```
+3. **Plan Infrastructure Changes:**
+    ```bash
     terraform plan -var-file=dev.tfvars
     ```
 
-4. Apply the Terraform configuration:
-    ```
+4. **Apply Terraform Configuration:**
+    ```bash
     terraform apply -var-file=dev.tfvars
     ```
 
 ## Deployment Steps
 
-### Know About
+### Learn About
 
-1. **GCS Fuse**: Learn about persistent volumes with Cloud Storage Fuse CSI Driver.
+1. **GCS Fuse**: Explore persistent volumes with Cloud Storage Fuse CSI Driver.
     [GCS Fuse Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/cloud-storage-fuse-csi-driver)
 
-2. **Provision static GCS buckets**: Guide for provisioning static GCS buckets.
+2. **Provision Static GCS Buckets**: Guide for provisioning static GCS buckets.
     [Static Bucket Provisioning Guide](https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/cloud-storage-fuse-csi-driver#provision-static)
 
 3. **Kubernetes Service Account Configuration**:
     Configure Kubernetes service accounts.
-    ```
+    ```bash
     kubectl annotate serviceaccount default \
         --namespace cvat \
         iam.gke.io/gcp-service-account=cvat-gsa-dev@wisy-cvat.iam.gserviceaccount.com
     ```
-4. **setup NFS Server**:
-   
+
+4. **Setup NFS Server**:
+
 ### Adding New Desk to VM
 
 Instructions for adding a new desk to VM:
-```
+```bash
 sudo mkfs.ext4 /dev/sdb
 sudo mkdir /mnt/nfsdisk
 sudo mount /dev/sdb /mnt/nfsdisk
@@ -64,7 +65,7 @@ sudo nano /etc/fstab
 ### Create NFS Server
 
 Guide for creating an NFS server:
-```
+```bash
 sudo apt update
 sudo apt install nfs-kernel-server
 sudo chown -R nobody:nogroup /mnt/nfsdisk/
@@ -83,7 +84,7 @@ sudo systemctl restart nfs-kernel-server
 ```
 
 5. **Setting up Helm**: Instructions for setting up Helm.
-    ```
+    ```bash
     cd wisy-cvat/kubernetes-manifests/dev
     helm dependency update
     ```
@@ -91,7 +92,7 @@ sudo systemctl restart nfs-kernel-server
 ### Running Helm
 
 Commands for running Helm:
-```
+```bash
 helm upgrade -n cvat-dev cvat-dev -i ./helm-chart -f helm-chart/values.yaml -f cvat.override-values-dev.yaml
 helm uninstall -n cvat-dev cvat-dev
 ```
@@ -99,17 +100,16 @@ helm uninstall -n cvat-dev cvat-dev
 ### Redis Authentication
 
 Get Redis authentication string:
-```
+```bash
 gcloud redis instances get-auth-string wisy-cvat-cache --region=us-east1 --project wisy-cvat
 ```
 
 ### Creating Super User
 
-Exec into backend server pod and run following command:
-```
+Execute the following command inside the backend server pod:
+```bash
 python3 ~/manage.py createsuperuser
 wisy-cvat-superadmin
 harry.paul@cloudwerx.tech
 wisy-cvat-superadmin
 ```
-
