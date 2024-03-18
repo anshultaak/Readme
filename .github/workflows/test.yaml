@@ -36,5 +36,5 @@ jobs:
       env:
         GIT_TAG: v0.1.0
       run:  |-
-        docker tag nginx:latest gcr.io/us-central1-docker.pkg.dev/jeanie-member-app/jeanie-mailchimp:latest
-        docker push gcr.io/us-central1-docker.pkg.dev/jeanie-member-app/jeanie-mailchimp:latest
+        docker tag nginx:latest gcr.io/us-central1-docker.pkg.dev/jeanie-member-app/jeanie-mailchim:latest
+        docker push gcr.io/us-central1-docker.pkg.dev/jeanie-member-app/jeanie-mailchim:latest
