@@ -10,7 +10,7 @@
 FROM hyperjump/monika:latest
 COPY monika.yml /config
 CMD["monika", -c", "config/monika.yml", "prometheus", "80", "-s", "-1"]
-```
+``` 
 
 
 ```STEP 3:``` After the changes under monika.yml done, we need to build the image:
