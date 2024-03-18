@@ -31,6 +31,7 @@ jobs:
       run:  |-
         gcloud auth configure-docker --quiet
         gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+        gsutil ls
     
     - name: Push Docker Image to Artifact Registry 
       env:
