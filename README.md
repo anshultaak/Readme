@@ -1,5 +1,5 @@
 #  CFA-SRE-MONIKA - APP SERVICE
-
+ 
 ``` STEP 1: ```  Under the MONIKA_SYNTHETICS repository,  we need to create yml file containeing the required configurations specific to the environments e.g monika.prod.yml, monika.qa.yml
 
 ```STEP 2:```  Dockerfile should be there with the needful command, and another file present will be azure-pipeline.yml, where the CICD rules will be added to build and deploy the image.
